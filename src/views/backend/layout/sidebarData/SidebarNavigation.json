@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "parent_id":null,
+        "name":"Dashboard",
+        "icon":"Das"
+    },
+
+
+
+
+
+
+    {
+        "id": 4,
+        "parent_id":null,
+        "name":"Student Management",
+        "icon":"Das"
+    },
+    {
+        "id": 5,
+        "parent_id":4,
+        "name":"Student Application",
+        "icon":"Das"
+    },
+    {
+        "id": 6,
+        "parent_id":4,
+        "name":"Student Application",
+        "icon":"Das"
+    },
+    {
+        "id": 7,
+        "parent_id":4,
+        "name":"Student Fees",
+        "icon":"Das"
+    },
+
+
+
+    {
+        "id": 8,
+        "parent_id":null,
+        "name":"Employee Management",
+        "icon":"Das"
+    },
+    {
+        "id": 9,
+        "parent_id":8,
+        "name":"Employee Registration",
+        "icon":"Das"
+    },
+    {
+        "id": 10,
+        "parent_id":8,
+        "name":"Employee Salary",
+        "icon":"Das"
+    }
+]

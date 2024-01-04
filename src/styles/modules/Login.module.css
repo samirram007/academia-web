@@ -1,0 +1,13 @@
+.loginBack{
+    height: 100vh;
+    width: 100%;
+}
+
+
+.loginImg{
+    background-image: url('../../assets/images/schoolBack.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-clip: border-box;   
+}

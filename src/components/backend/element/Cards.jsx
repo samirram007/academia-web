@@ -41,7 +41,7 @@ const LoginCard = () => {
             setEmailErr(false);
             setPasswordErr(false);
             try{
-                http.post('login',{email: email, password: password})
+                http.post('/login',{email: email, password: password})
                 .then((response) =>{
                     if(response)
                     {

@@ -4,7 +4,7 @@ import axios from "axios";
 
 const AuthService = () =>{
     const http = axios.create({
-        baseURL:"https://academia.ctrlaltfix.live/api/",
+        baseURL: import.meta.env.VITE_API_URL,
         headers:{
             "Content-Type":"application/json"
         }
