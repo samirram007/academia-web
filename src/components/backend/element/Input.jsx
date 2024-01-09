@@ -20,4 +20,19 @@ const InputWithLabel = ({placeHolder,type,labelName,inputValue, setInputValue}) 
 }
 
 
-export {Input, InputWithLabel};
+
+
+const CustomInputLabel = ({type,labelName,inputClass,labelClass,inputValue,setInputValue,placeHolderName}) =>{
+    return(
+        <div className="mt-6 mb-6">
+            <label htmlFor={labelName ? labelName : 'LabelName'} className={labelClass}>{labelName}</label>
+            <input type={type ? type : 'text'} id={labelName ? labelName :'LabelName'} className={inputClass} value={inputValue} onChange={(e) =>setInputValue(e.target.value)}  placeholder={placeHolderName} required autoComplete="off"  />
+        </div>
+    )
+}
+
+
+
+
+
+export {Input, InputWithLabel,CustomInputLabel};

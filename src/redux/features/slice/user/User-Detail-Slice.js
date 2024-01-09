@@ -1,6 +1,8 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 
+
+
 const tokenInitialState = {
     token: '',
 }
@@ -16,6 +18,7 @@ const userTokenSlice = createSlice({
         saveToken : (state, action) => {
             // console.log(action);
             state.token = action.payload;
+            localStorage.setItem('token',action.payload);
             return state;
         },
     }

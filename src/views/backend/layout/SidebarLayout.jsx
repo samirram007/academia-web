@@ -61,9 +61,9 @@ const SidebarLayout = () => {
         },
         {
             "id": 4,
-            "name": "Fees",
+            "name": "Index Crud",
             "parent_id": 2,
-            "link": "dashboard"
+            "link": "studentIndex"
         },
         {
             "id": 5,
@@ -93,7 +93,7 @@ const SidebarLayout = () => {
     return (
         <>
             <div>
-                <div className='fixed top-0 bottom-0 left-0 z-40 bg-slate-700 backdrop:blur-md opacity-60'>
+                <div className='fixed top-0 bottom-0 left-0 bg-slate-700 backdrop:blur-md opacity-60'>
                     <div className='fixed z-50 flex h-full drop-shadow-2xl md:drop-shadow'>
                         <div className='flex flex-col justify-start min-h-full gap-4 px-4 py-6 overflow-hidden md:overflow-auto bg-zinc-900'>
                             <div className="mt-14">

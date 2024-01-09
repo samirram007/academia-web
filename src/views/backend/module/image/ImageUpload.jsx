@@ -1,4 +1,5 @@
-import { ImageUploadButton } from "../../../../components/backend/element/Buttons";
+import { ModalButton } from "../../../../components/backend/element/Buttons";
+
 
 
 
@@ -9,7 +10,7 @@ const ImageUpload = () =>{
     return(
         <>
             <div>
-                <ImageUploadButton/>
+                <ModalButton/>
             </div>
         </>
     )
