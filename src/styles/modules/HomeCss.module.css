@@ -1,0 +1,19 @@
+.headerBg{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.3),rgba(0,0,0,0.5)), url('../../assets/frontend/bgimage.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}
+
+.overlayBg{
+    background: rgba(217, 217, 217, 0.85);
+}
+
+.administration{
+    background-image: linear-gradient(0deg, rgba(0,0,0,0.6),rgba(0,0,0,0.5)), url('../../assets/frontend/administration.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-clip: border-box;
+}

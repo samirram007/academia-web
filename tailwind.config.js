@@ -5,7 +5,11 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors:{
+        schoolName:'#00A74F'
+      }
+    },
   },
   plugins: [],
 }

@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { SignUpButton } from "../elements/Buttons";
+import SchoolLogo from '../../../assets/images/schoolLogo.jpeg';
 
 
 
@@ -9,31 +10,37 @@ const Header = () => {
     return (
 
 
-        <nav className="bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
-            <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-            <Link to='/'>
-            <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">School</span>
-            </Link>
-                <button data-collapse-toggle="navbar-dropdown" type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-dropdown" aria-expanded="false">
-                    <span className="sr-only">Open main menu</span>
-                </button>
-                <div className="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-                    <ul className="flex flex-col font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                        <li>
-                            <a href="#" className="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500 dark:bg-blue-600 md:dark:bg-transparent" aria-current="page">Home</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Services</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Pricing</a>
-                        </li>
-                        <li>
-                            <a href="#" className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Contact</a>
-                        </li>
-                        <li>
-                            <Link to='/login' ><SignUpButton name={'Login'} /></Link>
-                        </li>
+        <nav className="bg-[#F2EFE4] py-4 px-8">
+            <div className="grid grid-cols-2 gap-4">
+                <div className="">
+                    <p className="text-center text-md">Admission Open for 2024 <span className="text-xs underline text-blue-500">click here</span></p>
+                </div>
+                <div className=" flex justify-between px-12">
+                    <div>
+                        <p className="text-sm">Email: <span>info@email.com</span></p>
+                    </div>
+                    <div>
+                        <p className="text-sm">Contact us: +91 999999999/ 9898989898</p>
+                    </div>
+                </div>
+            </div>
+            <div className="grid grid-cols-2 pt-4">
+                <div className=" flex ">
+                    <div className="mr-8">
+                        <img src={SchoolLogo} className="w-12 rounded-full" alt="School Logo" />
+                    </div>
+                    <div className="align-center content-center flex align-middle flex-wrap">
+                        <p className="text-uppercase text-xl font-semibold">NAVA JYOTI VIDYAPITH <span className="text-schoolName underline underline-offset-4">NAIHATI</span></p>
+                    </div>
+                </div>
+                <div className="overflow-hidden px-8">
+                    <ul className="flex flex-wrap text-sm justify-between pt-2"  style={{alignItems:'center'}}>
+                        <li className="pr-4 underline underline-offset-2">Home</li>
+                        <li className="pr-4">About</li>
+                        <li className="pr-4">Admission</li>
+                        <li className="pr-4">Gallery</li>
+                        <li className="pr-4">Academics</li>
+                        <li className="pr-4">Administration</li>
                     </ul>
                 </div>
             </div>
