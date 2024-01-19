@@ -14,13 +14,13 @@ export default function DefaultLayout() {
      const { user, token, setUser, setToken } = useStateContext();
     const [isOpen, setOpen] = useState(true);
 
-// const {data:authUser,isLoading}=useQuery({
-//     queryKey: ['user'],
-//     queryFn:fetchUser,
-//     onSuccess: (authUser) => {
-//         setUser(authUser);
-//     }
-// })
+const {data:authUser,isLoading}=useQuery({
+    queryKey: ['user'],
+    queryFn:fetchUser,
+    onSuccess: (authUser) => {
+        setUser(authUser);
+    }
+})
 const  logout=useMutation({
     mutationFn: authLogout,
     onSuccess: () => {
@@ -47,7 +47,7 @@ const  logout=useMutation({
 
 
     return (
-        //  isLoading?<div>loading..</div>:
+         isLoading?<div>loading..</div>:
         <div
             id="defaultLayout"
             className="h-screen w-screen bg-zinc-200 dark:bg-zinc-700 overflow-y-auto"
@@ -56,7 +56,7 @@ const  logout=useMutation({
                 <Navbar
                     isOpen={isOpen}
                     setOpen={setOpen}
-                    userName={user.name}
+                    userName={authUser.name}
                     onLogout={onLogout}
                 />
 
